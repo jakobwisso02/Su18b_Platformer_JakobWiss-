@@ -4,7 +4,17 @@ using UnityEngine;
 
 public class PickUpCoin : MonoBehaviour
 {
+    public static int score;
+
     public int amount = 1;
+
+    private float spinSpeed = 180;
+
+
+    private void Update()
+    {
+        transform.Rotate(0, spinSpeed * Time.deltaTime, 0);
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -12,12 +22,11 @@ public class PickUpCoin : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        PickUpCoin.score += amount;
     }
 
-    private float spinSpeed = 180;
-    private void Update()
-    {
-        transform.Rotate(0, spinSpeed * Time.deltaTime, 0);
-    }
+
+
 
 }
