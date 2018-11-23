@@ -9,45 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1448931280350746}
+  m_RootGameObject: {fileID: 1913619166869212}
   m_IsPrefabAsset: 1
---- !u!1 &1448931280350746
+--- !u!1 &1913619166869212
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4426494061707676}
-  - component: {fileID: 212578896625399584}
-  - component: {fileID: 58853527285517422}
-  - component: {fileID: 114073302206397924}
+  - component: {fileID: 4768387454995438}
+  - component: {fileID: 61352370114327402}
+  - component: {fileID: 114500262505240456}
+  - component: {fileID: 212352489955605136}
+  - component: {fileID: 114015981837847356}
   m_Layer: 0
-  m_Name: Coin
-  m_TagString: Player
-  m_Icon: {fileID: 0}
+  m_Name: KillTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4426494061707676
+--- !u!4 &4768387454995438
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1448931280350746}
+  m_GameObject: {fileID: 1913619166869212}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12, y: 4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -64.59, y: -1.2, z: 2.15625}
+  m_LocalScale: {x: 275.92206, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &58853527285517422
-CircleCollider2D:
+--- !u!61 &61352370114327402
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1448931280350746}
+  m_GameObject: {fileID: 1913619166869212}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -55,26 +56,47 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.28
---- !u!114 &114073302206397924
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &114015981837847356
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1448931280350746}
+  m_GameObject: {fileID: 1913619166869212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abd1ac1b3c3b9f546a47fe5de381cd4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 798ee5fe541970a40bd7f0cff668857f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 1
---- !u!212 &212578896625399584
+--- !u!114 &114500262505240456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1913619166869212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9d9b66c8b0b7bc46946dc85296a2357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Su18b_Platformer_JakobWisso
+--- !u!212 &212352489955605136
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1448931280350746}
+  m_GameObject: {fileID: 1913619166869212}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -101,11 +123,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1916229293
-  m_SortingLayer: 4
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300046, guid: 8c4c7fa278ed3da499eca0b219508abf, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f1b477944db83264b80bda98bac520af, type: 3}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.29803923}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
