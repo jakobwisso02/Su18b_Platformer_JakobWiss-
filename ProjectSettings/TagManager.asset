@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - InvisibleWall
+  - Weapon
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Player
   - Ground
   - EnemyWall
-  - 
+  - Weapon
   - 
   - 
   - 
@@ -60,4 +61,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 4142492495
+    locked: 0
+  - name: Weapon
+    uniqueID: 1618286273
     locked: 0

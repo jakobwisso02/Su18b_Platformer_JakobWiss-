@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212247268889735900}
   - component: {fileID: 58352614420683772}
   m_Layer: 0
-  m_Name: Star
+  m_Name: StarPowerup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
