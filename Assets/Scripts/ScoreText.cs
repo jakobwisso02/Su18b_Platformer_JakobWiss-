@@ -7,7 +7,6 @@ using TMPro;
 
 public class ScoreText : MonoBehaviour
 {
-
     private TextMeshProUGUI text;
 
     // Use this for initialization

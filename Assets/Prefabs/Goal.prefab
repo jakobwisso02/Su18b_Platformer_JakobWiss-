@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4309338279403592}
   - component: {fileID: 212846198655329492}
   - component: {fileID: 61153895386512814}
-  - component: {fileID: 114823130373174744}
+  - component: {fileID: 114830616079364606}
   m_Layer: 8
   m_Name: Goal
   m_TagString: Finish
@@ -67,7 +67,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.93}
   m_EdgeRadius: 0
---- !u!114 &114823130373174744
+--- !u!114 &114830616079364606
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,9 +75,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1617799599119824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9d9b66c8b0b7bc46946dc85296a2357, type: 3}
+  m_Script: {fileID: 11500000, guid: 438b335ad07a4124784941fab3959a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minimumScoreNeeded: 0
   sceneToLoad: Su18b_Platformer_JakobWisso
 --- !u!212 &212846198655329492
 SpriteRenderer:

@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadLevel : MonoBehaviour
+public class ReloadLevel : MonoBehaviour
 {
-    public int minimumScoreNeeded = 0;
-
     // Gör "Su18b_Platformer_JakobWisso" till standardvärdet på vilken scen som ska laddas
     public string sceneToLoad = "Su18b_Platformer_JakobWisso";
 
@@ -14,7 +12,7 @@ public class LoadLevel : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Kollar om det händer en kollison med taggen "Player"
-        if (collision.tag == "Player" && Coin.score >= minimumScoreNeeded)
+        if (collision.tag == "Player")
         {
             // Laddar in standard scenen som nu är "Su18b_Platformer_JakobWisso"
             SceneManager.LoadScene(sceneToLoad);
