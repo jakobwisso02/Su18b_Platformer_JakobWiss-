@@ -15,7 +15,7 @@ public class LaserMovement : MonoBehaviour
     {
         //GetComponent<PlayerMovement>;
 
-        //
+        // Gör så att lasern rör sig åt höger multiplicerat med speed variabeln
         rbody.velocity = transform.right * speed;
     }
 
@@ -34,6 +34,18 @@ public class LaserMovement : MonoBehaviour
             Destroy(gameObject);
         }
 
+        // Om collisionen händer med en collider som är taggad som Enemy händer det i måsvingarna
+        // Denna är specifik för bossen
+        if (collision.tag == "Enemy")
+        {
+            BossHealth enemy = collision.GetComponent<BossHealth>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage);
+            }
+
+            Destroy(gameObject);
+        }
     }
 
 }
