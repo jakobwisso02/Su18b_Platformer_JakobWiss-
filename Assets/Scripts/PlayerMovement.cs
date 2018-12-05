@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             // Om Groundcheckern nuddar marken så är det mer än 0 om det inte är mer så kan man inte hoppa
-            if (groundCheck.isGrounded > 0)
+            if (GroundChecker.isGrounded > 0)
             {
                 // Gör så att gubben hoppar med variabeln jumpSpeeds hastighet
                 rbody.velocity = new Vector2(rbody.velocity.x, jumpSpeed);

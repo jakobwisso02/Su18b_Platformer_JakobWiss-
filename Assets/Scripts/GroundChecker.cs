@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class GroundChecker : MonoBehaviour
 {
-    public int isGrounded;
+    // Kan använda i flera scripts
+    public static int isGrounded;
 
     // Sent when another object enters a trigger collider attached to this object (2D only)
     private void OnTriggerEnter2D(Collider2D collision)
