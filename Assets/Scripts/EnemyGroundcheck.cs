@@ -2,22 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GroundChecker : MonoBehaviour
-{
+public class EnemyGroundcheck : MonoBehaviour {
+
     // Kan använda i flera scripts
-    public static int isGrounded;
+    public static int enemyIsGrounded;
 
     // Sent when another object enters a trigger collider attached to this object (2D only)
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Sätter värdet till 1
-        isGrounded = 1;
+        // Ökar värdet med 1
+        enemyIsGrounded++;
     }
 
     // Sent when another object leaves a trigger collider attached to this object (2D only)
     private void OnTriggerExit2D(Collider2D collision)
-    {     
-        // Sätter värdet till 0
-        isGrounded = 0;
+    {
+        // Minskar värdet med 1
+        enemyIsGrounded--;
     }
 }

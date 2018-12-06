@@ -19,6 +19,12 @@ public class ReloadLevel : MonoBehaviour
 
             // Gör så att när scenen laddas om så börjar score på 0
             Coin.score = 0;
+
+            // Gör så att powerup återställs när man dör
+            PlayerMovement.moveSpeed = 6;
+            PlayerMovement.jumpSpeed = 12;
+
+            
         }
     }
 

@@ -19,8 +19,8 @@ public class PowerUp : MonoBehaviour
     void Pickup()
     {
         // Hämtar variablerna moveSpeed och jumpSpeed och ändrar deras värde
-        PlayerMovement.moveSpeed = 10;
-        PlayerMovement.jumpSpeed = 16;
+        PlayerMovement.moveSpeed = 8;
+        PlayerMovement.jumpSpeed = 20;
 
         // Förstör det som scriptet ligger på, i detta fallet power up stjärnan
         Destroy(gameObject);

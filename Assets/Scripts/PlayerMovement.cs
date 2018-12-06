@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             // Player kollar åt höger
-            transform.localScale = new Vector3(0.75f, 0.75f, 1f);
+            transform.localScale = new Vector3(0.75f, 0.75f, 1f);            
         }
 
         // Om man trycker A händer det i måsvingarna

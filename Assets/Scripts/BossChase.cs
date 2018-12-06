@@ -7,7 +7,7 @@ public class BossChase : MonoBehaviour
     // I detta scriptet vill jag få bossen att bara gå åt ett håll så att man måste springa ifrån den och skjuta för att klara spelet
 
 
-    public float bossSpeed = 3f;
+    public float bossSpeed = 5f;
 
     // Skapar en RigidBody variabel
     private Rigidbody2D rbody;
